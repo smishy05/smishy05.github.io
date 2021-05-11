@@ -1,0 +1,64 @@
+
+.navigation-bar{
+    width: 80%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-desc{
+    margin-top: 1%;
+    margin-left: 9.5% !important;
+}
+
+.main-img{
+    width: 60%;
+}
+
+.set-margin{
+    margin-left: 1% ! important;
+    margin-top: 1% ! important;
+}
+
+ul#menu li {
+    display:inline;
+}
+
+.collapsible {
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 1%;
+  }
+  
+.collapsible:hover {
+    background-color: #555;
+  }
+  
+.content {
+padding: 0 18px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+width: 80%;
+}
+
+.button-projects {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
