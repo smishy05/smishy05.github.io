@@ -4,7 +4,9 @@
 }
 
 .links-web{
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .main-desc{
@@ -14,6 +16,8 @@
 .main-img{
     width: 60%;
     border-radius: 10%;
+    display:block;
+    margin:auto;
 }
 
 .set-margin{
@@ -36,11 +40,11 @@ ul#menu li {
     font-size: 15px;
     margin-bottom: 1%;
   }
-  
+
 .collapsible:hover {
     background-color: #555;
   }
-  
+
 .content {
 padding: 0 18px;
 max-height: 0;
@@ -60,5 +64,5 @@ width: 100%;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    
+
   }
