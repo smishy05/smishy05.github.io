@@ -1,6 +1,12 @@
 
-.navigation-bar{
-    margin-top: 1%;
+
+.main-container {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    margin-top: 1% !important;
 }
 
 .links-web{
@@ -10,7 +16,11 @@
 }
 
 .main-desc{
-    margin-top: 1%;
+
+    padding-top: 2% !important;
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+    padding-bottom: 5% !important;
 }
 
 .main-img{
