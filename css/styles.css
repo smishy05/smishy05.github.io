@@ -77,6 +77,20 @@ width: 100%;
 
 }
 
+.button-pubs {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 16px; */
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
 .last-update {
     text-align: right;
     color: grey;
