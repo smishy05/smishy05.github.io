@@ -97,3 +97,13 @@ width: 100%;
     padding-bottom: 20px !important;
     padding-right: 10px;
 }
+
+code { 
+    background: hsl(220, 80%, 90%);
+    font-: black !important;
+}
+
+pre {
+    white-space: pre-wrap;
+    background: hsl(220, 80%, 90%);
+}

@@ -7,7 +7,7 @@
         type = "image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="../../css/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -53,52 +53,41 @@
 
     <div class="row main-desc">
         <div class="col-sm-12">
-                <h2>Posts</h2>
-                Here, I have written a few things about Grad School, Ubuntu, Blockchains, and other stuffs. If you want to discuss about any of them, feel free to reach to <a href="mailto:shailesh.mishra0511@gmail.com" target="_blank" rel="noopener noreferrer">email</a>.<br>
-                <button class="collapsible">Grad School</button>
-                <div class="content">
-                        Coming Soon
-                </div>
-                <button class="collapsible">Ubuntu</button>
-                <p>Here, I will be writing the solutions for some nagging issues that I have faced while working on Ubuntu. I am no pro in using Linux or Ubuntu. But, I hope that this section helps a bit.</p>
-                <div class="content">
-                        <ol>
-                                <li><a href="./posts/ubuntu/post_1.html">Solution for being unable to share screen on Ubuntu 22.04</a></li>
-                        </ol>
-                </div>
-                <button class="collapsible">Blockchain</button>
-                <div class="content">
-                        Coming Soon
-                </div>
-                <button class="collapsible">Anime</button>
-                <div class="content">
-                        Coming Soon
-                </div>
-                <button class="collapsible">Miscellaneous</button>
-                <div class="content">
-                        Coming Soon
-                </div>
-
+                <h2>Solution for being unable to share screen on Ubuntu 22.04</h2>
+                <p>When I installed Ubuntu 22.04, I wasn't able to share my screen on any call. Initially, I thought that the issue is with my browser. But, later I figured out that the issue is Ubuntu 22.04 itself.</p>
+                <p><b>*Note: This issue is there in the initial releases of 22.04. I think this should be removed soon.</b></p>
+                <h4>Problem</h4>
+                <p>The issue is that Ubuntu is using <i>Wayland</i> as the default display. Wayland as of now does not support screen sharing. Therefore, you need to change this.</p>
+                <h4>Solution</h4>
+                <ol>
+                        <li>
+                                <p>To check which display Ubuntu is using, type in this command on the terminal:</p>
+                                <pre>echo $XDG_SESSION_TYPE</pre>
+                        </li>
+                        <li>
+                                <p>If the output is <code>Wayland</code>, then your system is using Wayland. You have to change the default display to <code>x11</code>.</p>
+                        </li>
+                        <li>
+                                <p>Type in this command on the terminal and then, enter your password:</p>
+                                <pre>sudo gedit /etc/gdm3/custom.conf</pre>
+                                <p><b>*Note: You can use nano, subl or any editor you like.</b></p>
+                        </li>
+                        <li>
+                                <p>Uncomment the line:</p>
+                                <pre>WaylandEnable=false</pre>
+                        </li>
+                        <li>
+                                <p>Save the file and reboot.</p>
+                        </li>
+                </ol>
+                <p>And, you are done!!</p>
+                <h4>Sources</h4>
+                <ul>
+                        <li><a href="https://askubuntu.com/questions/1407494/screen-share-not-working-in-ubuntu-22-04-in-all-platforms-zoom-teams-google-m" target="_blank" rel="noopener noreferrer">Screen Share Not working in Ubuntu 22.04 (In all platforms zoom, teams, google meet, anydesk , etc.,)</a></li>
+                </ul>
         </div>
     </div>
 </div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
 
 </body>
 </html>
