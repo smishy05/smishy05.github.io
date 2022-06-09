@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Shailesh</title>
+  <title>Projects</title>
   <link rel = "icon" href =
 "./images/dot.png"
         type = "image/x-icon">
@@ -19,9 +19,10 @@
 </head>
 
 <body style="background-color:#ebe9e6; font-family: Ubuntu;">
-<div class="container main-container">
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark navigation-bar">
+  <div class="container main-container">
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark navigation-bar nav-prop">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,10 +39,10 @@
             <li class="nav-item">
               <a class="nav-link" href="./projects.html">PROJECTS</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="./cv.html">CV</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="./posts.html">POSTS</a>
             </li>
           </ul>
@@ -52,10 +53,49 @@
 
     <div class="row main-desc">
         <div class="col-sm-12">
-            <a href="./pdfs/main.pdf">CV</a> (Last Updated on 10th January, 2022)
+                <h2>Posts</h2>
+                Here, I have written a few things about Grad School, Ubuntu, Blockchains, and other stuffs. If you want to discuss about any of them, feel free to reach to <a href="mailto:shailesh.mishra0511@gmail.com" target="_blank" rel="noopener noreferrer">email</a>.
+                <button class="collapsible">Grad School</button>
+                <div class="content">
+                        Coming Soon
+                </div>
+                <button class="collapsible">Ubuntu</button>
+                <div class="content">
+                        Coming Soon
+                </div>
+                <button class="collapsible">Blockchain</button>
+                <div class="content">
+                        Coming Soon
+                </div>
+                <button class="collapsible">Anime</button>
+                <div class="content">
+                        Coming Soon
+                </div>
+                <button class="collapsible">Miscellaneous</button>
+                <div class="content">
+                        Coming Soon
+                </div>
+
         </div>
     </div>
 </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 
 </body>
 </html>
