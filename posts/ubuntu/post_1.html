@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
   <title>Posts</title>
-  <link rel = "icon" href =
-"./images/dot.png"
-        type = "image/x-icon">
+  <link rel = "icon" href = "./images/dot.png" type = "image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../css/styles.css">
@@ -18,7 +16,7 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
 </head>
 
-<body style="background-color:#ebe9e6; font-family: Ubuntu;">
+<body>
 
   <div class="container main-container">
 
@@ -31,19 +29,19 @@
           <div class="col-sm-12">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">HOME</a>
+              <a class="nav-link" href="../../index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./publications.html">PUBLICATIONS</a>
+              <a class="nav-link" href="../../publications.html">PUBLICATIONS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./projects.html">PROJECTS</a>
+              <a class="nav-link" href="../../projects.html">PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./cv.html">CV</a>
+              <a class="nav-link" href="../../cv.html">CV</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="./posts.html">POSTS</a>
+              <a class="nav-link" href="../../posts.html">POSTS</a>
             </li>
           </ul>
           </div>
@@ -61,23 +59,23 @@
                 <h4>Solution</h4>
                 <ol>
                         <li>
-                                <p>To check which display Ubuntu is using, type in this command on the terminal:</p>
-                                <pre>echo $XDG_SESSION_TYPE</pre>
+                            <p>To check which display Ubuntu is using, type in this command on the terminal:</p>
+                            <pre>echo $XDG_SESSION_TYPE</pre>
                         </li>
                         <li>
-                                <p>If the output is <code>Wayland</code>, then your system is using Wayland. You have to change the default display to <code>x11</code>.</p>
+                            <p>If the output is <code>Wayland</code>, then your system is using Wayland. You have to change the default display to <code>x11</code>.</p>
                         </li>
                         <li>
-                                <p>Type in this command on the terminal and then, enter your password:</p>
-                                <pre>sudo gedit /etc/gdm3/custom.conf</pre>
-                                <p><b>*Note: You can use nano, subl or any editor you like.</b></p>
+                            <p>Type in this command on the terminal and then, enter your password:</p>
+                            <pre>sudo gedit /etc/gdm3/custom.conf</pre>
+                            <p><b>*Note: You can use nano, subl or any editor you like.</b></p>
                         </li>
                         <li>
-                                <p>Uncomment the line:</p>
-                                <pre>WaylandEnable=false</pre>
+                            <p>Uncomment the line:</p>
+                            <pre>WaylandEnable=false</pre>
                         </li>
                         <li>
-                                <p>Save the file and reboot.</p>
+                            <p>Save the file and reboot.</p>
                         </li>
                 </ol>
                 <p>And, you are done!!</p>

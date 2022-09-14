@@ -1,5 +1,8 @@
 
-
+body {
+    background-color:#ebe9e6 !important; 
+    font-family: Ubuntu !important;
+}
 .main-container {
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -24,8 +27,7 @@
 }
 
 .main-img{
-    width: 75%;
-    border-radius: 50%;
+    width: 100%;
     display:block;
     margin:auto;
 }
@@ -100,7 +102,6 @@ width: 100%;
 
 code { 
     background: hsl(220, 80%, 90%);
-    font-: black !important;
 }
 
 pre {
