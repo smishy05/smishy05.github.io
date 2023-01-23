@@ -27,7 +27,9 @@ body {
 }
 
 .main-img{
-    width: 100%;
+    width: 80%;
+    border-radius: 50%;
+
     display:block;
     margin:auto;
 }
